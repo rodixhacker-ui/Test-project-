@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Send Message</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <form id="contactForm" class="card">
+      <h1>Send me a message</h1>
+      <p class="sub">Sab kuch seedha Telegram pe aayega.</p>
+
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required placeholder="Tera naam" />
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required placeholder="you@example.com" />
+
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" type="tel" placeholder="optional" />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" required placeholder="Kya likhna hai..."></textarea>
+
+      <button type="submit" id="submitBtn">Send</button>
+      <p id="status" class="status"></p>
+    </form>
+  </main>
+  <script src="/script.js"></script>
+</body>
+</html>
